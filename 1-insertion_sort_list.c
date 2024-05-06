@@ -11,8 +11,11 @@ void insertion_sort_list(listint_t **list)
 
 	org = *list;
 
-	if (org == NULL)
+	if (**list == NULL)
 		return;
+
+	print_list(org);
+	printf();
 
 	while (org->next)
 	{
