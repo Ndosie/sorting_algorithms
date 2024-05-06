@@ -9,9 +9,9 @@ void insertion_sort_list(listint_t **list)
 	listint_t *org, *t, *p;
 	int swap = 0;
 
-	org = *list;
+	org = list;
 
-	if (**list == NULL)
+	if (list == NULL)
 		return;
 
 	print_list(org);
